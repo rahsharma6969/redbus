@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Example</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="flex flex-row justify-center items-center py-2 mr-32">
+      <div class="inner1 mr-32">
+        <!-- Add margin-right for spacing -->
+        <img src="assets/rdc-redbus-logo.svg" alt="RedBus Logo" />
+      </div>
+
+      <div class="inner2 flex flex-row items-center space-x-4 mx-8">
+        <!-- Centered with space-x-4 -->
+        <div>
+          <img src="assets/rb_vertical.svg" class="max-height-10" alt="RedBus" />
+          <p class="text-gray-600 text-sm">RedBus</p>
+        </div>
+        <div>
+          <img src="assets/ryde_car.svg" class="max-height-10" alt="Car" />
+          <p class="text-gray-600 text-sm">Car</p>
+        </div>
+        <div>
+          <img src="assets/rail_vertical.svg" class="max-height-10" alt="Train" />
+          <p class="text-gray-600 text-sm">Train</p>
+        </div>
+      </div>
+
+      <div class="inner3 flex flex-row items-center space-x-4 ml-32">
+        <!-- Centered with space-x-4 -->
+        <div class="flex flex-row items-center space-x-2">
+          <!-- Changed to flex-row -->
+          <img src="assets/headphones-support.svg" class="h-10 w-10" alt="Help" />
+          <p class="text-gray-600 text-sm">Help</p>
+        </div>
+        <div class="flex flex-row items-center space-x-2">
+          <!-- Changed to flex-row -->
+          <img src="assets/account.png" class="h-10 w-10" alt="Account" />
+          <!-- Added height and width for consistency -->
+          <p class="text-gray-600 text-sm">Account</p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Background Image Section -->
+    <div class="bg-image-section h-64 bg-cover bg-center relative">
+      <div class="header text-3xl text-black font-bold text-center pb-12">
+        <h1>India's No.1 Bus booking Site</h1>
+      </div>
+
+      <img src="assets/HomeBannerImg.svg" alt="Home Banner" />
+
+      <!-- New Curved Box Div -->
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-3xl p-4 shadow-lg h-[40px] w-[1000px] text-center flex flex-row justify-center items-center space-x-12 pt-10"
+      >
+        <!-- Increased space-x-8 to space-x-12 -->
+
+        <div class="flex flex-col items-center">
+          <img src="assets/from.png" alt="From" class="mb-2 h-6 w-6" />
+          <!-- Reduced size -->
+          <span>From</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="assets/to.png" alt="To" class="mb-2 h-6 w-6" />
+          <!-- Reduced size -->
+          <span>To</span>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="assets/date.png" alt="Date" class="mb-2 h-6 w-6" />
+          <!-- Reduced size -->
+          <span>11-12-24</span>
+        </div>
+
+        <button class="bg-red-500 text-white text-2xl font-bold flex items-center justify-center h-full p-4 rounded-lg">
+            Search Bus
+          </button>
+        </div>
+      </div>
+
+      
+      <!-- Trending Offers Section -->
+  
+       
+            
+    <div class="third font-bold text-2xl flex flex-col z-10 relative bg-white p-4 w-3/4 max-w-[800px] h-auto overflow-hidden border border-gray-300 shadow-lg mx-auto rounded-lg">
+        <h2 class="">Trending Offers</h2>
+        <div class="container mt-3 flex flex-row overflow-x-auto space-x-4" style="width: 100%; overflow-x: auto;"> <!-- Horizontal layout with overflow -->
+            
+            <!-- Offer Box 1 -->
+            <div class="offer-item bg-red-200 flex flex-col justify-center items-center p-4 rounded-md shadow-lg w-48 h-auto" style="min-width: 300px;"> <!-- Fixed width -->
+                <img src="assets/trending offer 1.png" class="w-24 h-24 rounded-full mb-2" alt="Sale Offer 1" />
+                <h3 class="text-lg font-bold">50% Off on Electronics</h3>
+                <p class="text-md font-semibold text-black">Upgrade your gadgets with our exclusive sale!</p>
+                <span class="text-xl font-bold text-red-600">$199.99 <span class="line-through text-gray-400">$399.99</span></span>
+                <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 transition duration-200">Shop Now</button>
+            </div>
+    
+            <!-- Offer Box 2 -->
+            <div class="offer-item bg-green-200 flex flex-col justify-center items-center p-4 rounded-md shadow-lg w-48 h-auto" style="min-width: 300px;"> <!-- Fixed width -->
+                <img src="assets/trending offer 2.png" class="w-24 h-24 rounded-full mb-2" alt="Sale Offer 2" />
+                <h3 class="text-lg font-bold">Buy One Get One Free</h3>
+                <p class="text-md font-semibold text-black">Get a free item with every purchase!</p>
+                <span class="text-xl font-bold text-red-600">$29.99</span>
+                <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 transition duration-200">Grab This Deal</button>
+            </div>
+    
+            <!-- Offer Box 3 -->
+            <div class="offer-item bg-yellow-200 flex flex-col justify-center items-center p-4 rounded-md shadow-lg w-48 h-auto" style="min-width: 300px;"> <!-- Fixed width -->
+                <img src="assets/trending offer 3.png" class="w-24 h-24 rounded-full mb-2" alt="Sale Offer 3" />
+                <h3 class="text-lg font-bold">Clearance Sale - Up to 70% Off</h3>
+                <p class="text-md font-semibold text-black">Limited stock available on clearance items.</p>
+                <span class="text-xl font-bold text-red-600">$19.99 <span class="line-through text-gray-400">$69.99</span></span>
+                <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 transition duration-200">Shop Clearance</button>
+            </div>
+    
+            <!-- Offer Box 4 -->
+            <div class="offer-item bg-blue-200 flex flex-col justify-center items-center p-4 rounded-md shadow-lg w-48 h-auto" style="min-width: 300px;"> <!-- Fixed width -->
+                <img src="assets/trending offer 4.png" class="w-24 h-24 rounded-full mb-2" alt="Sale Offer 4" />
+                <h3 class="text-lg font-bold">Flash Sale - 30% Off Sitewide</h3>
+                <p class="text-md font-semibold text-black">Hurry! Limited time offer on all products.</p>
+                <span class="text-xl font-bold text-red-600">$69.99 <span class="line-through text-gray-400">$99.99</span></span>
+                <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600 transition duration-200">Shop Now</button>
+            </div>
+    
+            <!-- Additional Offer Boxes -->
+            <div class="offer-item bg-purple-200 flex flex-col justify-center items-center p-4 rounded-md shadow-lg w-48 h-auto" style="min-width: 300px;"> <!-- Fixed width -->
+              <img src="assets/trending_offer_8.png" class="w-24 h-24 rounded-full mb-2" alt="Sale Offer 5" />
+              <h3 class="text-lg font-bold">Weekend Special - 40% Off All Apparel</h3>
+              <p class="text-md font-semibold text-black">Refresh your wardrobe with our exclusive weekend sale!</p>
+              <span class="text-xl font-bold text-red-600">$39.99 <span class="line-through text-gray-400">$66.99</span></span>
+              <button class="mt-2 bg-purple-500 text-white py-1 px-3 rounded hover:bg-purple-600 transition duration-200">Shop Now</button>
+          </div>
+    
+            <div class="offer-item bg-green-200 flex flex-col justify-center items-center p-4 rounded-md shadow-lg w-48 h-auto" style="min-width: 300px;"> <!-- Fixed width -->
+              <img src="assets/trending_offer_7.png" class="w-24 h-24 rounded-full mb-2" alt="Sale Offer 5" />
+              <h3 class="text-lg font-bold">Seasonal Clearance - Up to 50% Off</h3>
+              <p class="text-md font-semibold text-black">Don't miss out on our seasonal clearance sale!</p>
+              <span class="text-xl font-bold text-red-600">$49.99 <span class="line-through text-gray-400">$99.99</span></span>
+              <button class="mt-2 bg-green-500 text-white py-1 px-3 rounded hover:bg-green-600 transition duration-200">Grab This Deal</button>
+          </div>
+    
+          
+    
+    
+    <style>
+        .container {
+            scroll-snap-type: x mandatory; /* Enable snap scrolling */
+        }
+        .offer-item {
+            scroll-snap-align: start; /* Align each item to the start of the container */
+        }
+        .container::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for a cleaner look */
+        }
+    </style>
+  </body>      
